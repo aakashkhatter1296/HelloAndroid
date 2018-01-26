@@ -14,7 +14,7 @@ android:
     - extra-android-m2repository
     - extra-google-m2repository
 
-    - sys-img-armeabi-v7a-android-27
+    - sys-img-armeabi-v7a-android-24
 
   env:
     global:
