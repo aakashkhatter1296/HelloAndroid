@@ -5,14 +5,19 @@ sudo: false
 android:
   components:
     - tools
-    - tools
     - platform-tools
+    - tools
 
     - build-tools-27.0.3
     - android-27
 
     - extra-android-m2repository
     - extra-google-m2repository
+
+  licenses:
+      - 'android-sdk-preview-license-.+'
+      - 'android-sdk-license-.+'
+      - 'google-gdk-license-.+'
 
 #    - sys-img-armeabi-v7a-android-24
 
