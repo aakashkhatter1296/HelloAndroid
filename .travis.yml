@@ -21,12 +21,12 @@ android:
       - 'android-sdk-license-.+'
       - 'google-gdk-license-.+'
 
-
-
 env:
   global:
     - ADB_INSTALL_TIMEOUT=8
 
+before_install:
+  - yes | sdkmanager "platforms;android-27"
 
 before_script:
   - android list targets
@@ -38,5 +38,6 @@ before_script:
 
 script:
    - ./gradlew build connectedCheck
+
 
 
